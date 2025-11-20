@@ -1,11 +1,12 @@
 // Engine.h
 #include <iostream>
+#include <string>
 class Engine
 {
 public:
   virtual void run() = 0;
-  void version()
+  std::string version()
   {
-    std::cout << "Version 1.0" << std::endl;
+    return "Version 1.0";
   }
 };
